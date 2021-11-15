@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+  <h2>Name: {{snack_object.name}}</h2>
+  <p>Description: {{snack_object.description}}</p>
+  <p>purchaser: {{snack_object.purchaser}}</p>
+
+  
+</div>
+
+<a href="{% url 'home' %}">snack_list</a>
+
+{% endblock content %}
